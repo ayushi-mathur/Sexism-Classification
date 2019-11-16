@@ -17,7 +17,7 @@
 
 The data was annotated based on a simple metric: Do these comments and captions pertain to sexism or not? A comment or caption is defined to pertain to sexism if it is either sexist itself (for example: "Women belong in the kitchen") or about sexism (for example: "I was told to shut up because women don't know science"). This binary classification was manually annotated for 200 captions and comments, with an inter-annotator agreement rate of 94% across four annotators.
 
-Using the annotations, we then further classified the sexist instagram captions and comments based on role based and attribute based sexism. Role based sexism, also known as role stereotyping, refers to the generalization of false notions based on the idea that certain roles, occupations, professions and jobs are restricted only to men, and other are only to women. On the other hand, attribute based sexism or attribute stereotyping,  refers to physiological, psychological or behavioural qualities of men and women, to a degree of generalization that makes it untrue. 
+Using the annotations, we then further classified the sexist instagram captions and comments based on role based and attribute based sexism. Role based sexism, also known as role stereotyping, refers to the generalization of false notions based on the idea that certain roles, occupations, professions and jobs are restricted only to, or suitable only for, a particular gender instead of another. On the other hand, attribute based sexism or attribute stereotyping, refers to misconceptions about the physiological, psychological or behavioural characteristics of people based on their gender.
 
 It is also possible that the sexism may be a combination of both. However, due to the data skew on the number of sexist captions and comments, a combination of both would be difficult to identify and isolate, due to which it was not considered.
 
@@ -122,13 +122,3 @@ With this dataset, we started off with a manual annotation of small number of po
 We then experimented with different classifiers, where an LSTM classifier with only $50$ hidden layer dimension performed the best compared to higher dimension, or multi-layer classifier, even though we made sure that the training set had equal distribution between the 2 classes, for both binary and hierarchical classifier. This can be attributed to the skewed dataset that we have for this task. Further work over here would be to expand the dataset to include more sexist posts/captions.
 
 The further work in this would be first to better the dataset by including more sexist captions. We can also identify more classes in the sexist types in the dataset, such as slut shaming, mansplaining, etc. The next step would be to experiment with other classifiers like Bi-LSTM, CNN, CNN-biLSTM-Attention, Hierarchical-biLSTM-Attention, and BERT, and with GloVe Twitter embedding along with GloVe Wikipedia.
-
-## Complete Report
-
-The complete report can be found [here](https://drive.google.com/file/d/1ioXSm3dWoSF00Z3TjhdgCie4yebOwjra/view?usp=sharing).
-
-## Video Presentation
-
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/okd5UwopDJE/0.jpg)](http://www.youtube.com/watch?v=okd5UwopDJE "Video Title")
-
-
